@@ -37,9 +37,6 @@ void run()
     Uint32 lastFrame = lastTime;
     int frames = 0;
     float fps = 0.0f;
-
-    convert_sprite_to_argb(player_sprite, 16*16);
-    convert_sprite_to_argb(brick_tile, 16*16);
     
     sprite1 = load_sprite("assets/Sprite-0002.png");
     brick_tile = load_sprite("assets/Bricks.png");
@@ -91,7 +88,7 @@ void run()
             }
         }
 
-        const uint8_t* state = SDL_GetKeyboardState(NULL);
+        const bool* state = SDL_GetKeyboardState(NULL);
 
         int speed = 100;
 
