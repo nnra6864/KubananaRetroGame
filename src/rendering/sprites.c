@@ -7,7 +7,7 @@ Sprite load_sprite(const char* path)
 
     SDL_Surface* surface = IMG_Load(path);
 
-    SDL_Surface* formattedSurface = SDL_ConvertSurface(surface, SDL_PIXELFORMAT_ABGR8888);
+    SDL_Surface* formattedSurface = SDL_ConvertSurface(surface, SDL_PIXELFORMAT_ARGB8888);
     SDL_DestroySurface(surface);
 
     sprite.width = formattedSurface->w;
