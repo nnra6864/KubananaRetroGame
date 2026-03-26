@@ -121,7 +121,7 @@ void run()
         draw_sprite(frameBuffer, &sprite1, 100, 100, 3);
         draw_player(frameBuffer, &player_sprite, &player, 2);
         draw_text(frameBuffer, "START GAME", 10, 10, 0xFFFFFFFF);
-        draw_sprite(frameBuffer, &boss, 100, 20, 8);
+        draw_sprite(frameBuffer, &boss, 100, 20, 2);
 
         char fps_text[16];
         sprintf(fps_text, "%.0f FPS", fps);
