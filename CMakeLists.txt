@@ -15,6 +15,7 @@ set(SDLIMAGE_TIF OFF)
 
 add_subdirectory(external/SDL3)
 add_subdirectory(external/SDL_image)
+add_subdirectory(external/SDL_mixer)
 
 add_executable(RetroGame src/main.c
                         src/core/game.c
@@ -22,4 +23,5 @@ add_executable(RetroGame src/main.c
                          src/rendering/sprites.c)
 
 target_link_libraries(RetroGame SDL3::SDL3
-                                SDL3_image::SDL3_image)
+                                SDL3_image::SDL3_image
+                                SDL3_mixer::SDL3_mixer)
